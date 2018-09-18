@@ -10,9 +10,9 @@ import UIKit
 open class DefaultAnimatorProvider: AnimatorProvider {
     
     public private(set) var duration: TimeInterval
-    private var curve: UIViewAnimationCurve
+    private var curve: UIView.AnimationCurve
     
-    public init(duration: TimeInterval = 0.5, curve: UIViewAnimationCurve = .easeInOut) {
+    public init(duration: TimeInterval = 0.5, curve: UIView.AnimationCurve = .easeInOut) {
         self.duration = duration
         self.curve = curve
     }
